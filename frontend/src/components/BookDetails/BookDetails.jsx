@@ -16,7 +16,7 @@ const BookDetails = () => {
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(
-                `http://localhost:3000/api/v1/book/${id}`
+                `https://book-store-sz1p.onrender.com/api/v1/book/${id}`
             );
             setData(res.data.data);
         };
@@ -31,7 +31,7 @@ const BookDetails = () => {
 
     const deleteBook = async () => {
         const res = await axios.delete(
-            "http://localhost:3000/api/v1/delete-book",
+            "https://book-store-sz1p.onrender.com/api/v1/delete-book",
             {
                 headers,
             }

@@ -38,7 +38,7 @@ const UpdateBook = () => {
                 alert("All fields are required");
             } else {
                 const res = await axios.put(
-                    "http://localhost:3000/api/v1/update-book",
+                    "https://book-store-sz1p.onrender.com/api/v1/update-book",
                     data,
                     { headers }
                 );
@@ -61,7 +61,7 @@ const UpdateBook = () => {
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(
-                `http://localhost:3000/api/v1/book/${id}`
+                `https://book-store-sz1p.onrender.com/api/v1/book/${id}`
             );
             setData(res.data.data);
         };

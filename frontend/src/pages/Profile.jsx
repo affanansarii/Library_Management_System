@@ -15,7 +15,7 @@ const Profile = () => {
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(
-                "http://localhost:3000/api/v1/get-user-information",
+                "https://book-store-sz1p.onrender.com/api/v1/get-user-information",
                 { headers }
             );
             setProfile(res.data);

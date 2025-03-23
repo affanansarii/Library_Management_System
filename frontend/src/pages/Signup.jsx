@@ -26,7 +26,7 @@ const Signup = () => {
                 alert("Please fill all fields");
             } else {
                 const res = await axios.post(
-                    "http://localhost:3000/api/v1/sign-up",
+                    "https://book-store-sz1p.onrender.com/api/v1/sign-up",
                     values
                 );
                 alert(res.data.message);

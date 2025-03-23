@@ -33,7 +33,7 @@ const AddBook = () => {
                 alert("All fields are required");
             } else {
                 const res = await axios.post(
-                    "http://localhost:3000/api/v1/add-book",
+                    "https://book-store-sz1p.onrender.com/api/v1/add-book",
                     data,
                     { headers }
                 );

@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchBooks = async () => {
             const res = await axios.get(
-                "http://localhost:3000/api/v1/get-all-books"
+                "https://book-store-sz1p.onrender.com/api/v1/get-all-books"
             );
             setData(res.data.data);
             setFilteredData(res.data.data);
